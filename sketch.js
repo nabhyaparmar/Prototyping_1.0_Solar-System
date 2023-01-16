@@ -17,7 +17,7 @@ let orbitTime = ["88 Days", "225 Days", "365 Days", "687 Days", "4,380 Days", "1
 
 let orbitDistance = ["35M Miles", "67M Miles", "92M Miles", "141M Miles", "483M Miles", "886M Miles", "1783M Miles", "2795M Miles"];
 
-let distEarth = ["28M Miles", "62M Miles", "38M Miles", "33.9M Miles", "365M Miles", "746M Miles", "1600M Miles", "2700M Miles"];
+let distEarth = ["28M Miles", "62M Miles", "0 Miles", "33.9M Miles", "365M Miles", "746M Miles", "1600M Miles", "2700M Miles"];
 
 //Declare Background Image
 let bg;
