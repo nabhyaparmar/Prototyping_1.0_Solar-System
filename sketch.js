@@ -1,11 +1,6 @@
 //Declare Fonts
 let font1;
 
-//Move
-let increment = true;
-let counter;
-let counterNew;
-
 //Declare Planet Names
 let planetCode = [0, 1, 2, 3, 4, 5, 6, 7];
 
@@ -219,7 +214,6 @@ class Planets {
   //Clicked Function 
   clicked() {
     increment = false;
-    console.log(counter, counterNew);
     var d = dist(
       sin(this.speed) * this.radius + middleX, cos(this.speed) * this.radius + middleY, mouseX, mouseY);
     if (d < this.size) {
