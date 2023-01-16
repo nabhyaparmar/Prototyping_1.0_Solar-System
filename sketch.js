@@ -1,6 +1,11 @@
 //Declare Fonts
 let font1;
 
+//Move
+let increment = true;
+let counter;
+let counterNew;
+
 //Declare Planet Names
 let planetCode = [0, 1, 2, 3, 4, 5, 6, 7];
 
@@ -12,7 +17,7 @@ let orbitTime = ["88 Days", "225 Days", "365 Days", "687 Days", "4,380 Days", "1
 
 let orbitDistance = ["35M Miles", "67M Miles", "92M Miles", "141M Miles", "483M Miles", "886M Miles", "1783M Miles", "2795M Miles"];
 
-let distEarth = ["28M Miles", "62M Miles", "0 Miles", "33.9M Miles", "365M Miles", "746M Miles", "1600M Miles", "2700M Miles"];
+let distEarth = ["28M Miles", "62M Miles", "38M Miles", "33.9M Miles", "365M Miles", "746M Miles", "1600M Miles", "2700M Miles"];
 
 //Declare Background Image
 let bg;
@@ -214,6 +219,7 @@ class Planets {
   //Clicked Function 
   clicked() {
     increment = false;
+    console.log(counter, counterNew);
     var d = dist(
       sin(this.speed) * this.radius + middleX, cos(this.speed) * this.radius + middleY, mouseX, mouseY);
     if (d < this.size) {
